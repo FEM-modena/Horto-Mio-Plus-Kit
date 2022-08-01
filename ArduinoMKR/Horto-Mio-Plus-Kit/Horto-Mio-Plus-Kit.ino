@@ -13,8 +13,8 @@
 ///// NON SPOSTARE QUESTE DEFINIZIONI  /////
 //*******************************************
 #define SECRET_SSID "FEM_WiFi"
-#define SECRET_PASS "0h4orXc@yS3do"
-#define CHIAVE_CLOUD "hort0MioPlus1"
+#define SECRET_PASS "wifipassword"
+#define CHIAVE_CLOUD "FEMHortoMio_token"
 
 char dboard_server[] = "demo.thingsboard.io"; // Indirizzo IP/Internet del Dashboard Server
 int dboard_port = 80;                         // Porta IP del server
@@ -37,7 +37,7 @@ void accendi_LED_per(byte volte);
 
 //Collegamento alla piattaforma GL-Blocks
 #include "GL-Blocks-WiFi.h"
-#include "GL-Blocks-Dashboard-GAX.h"
+#include "GL-Blocks-Dashboard-HMP.h"
 //*******************************************
 ///// NON SPOSTARE QUESTE DEFINIZIONI  /////
 
