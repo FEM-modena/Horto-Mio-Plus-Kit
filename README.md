@@ -9,13 +9,20 @@
 - Wire.h
 - WIFININA.h
 - ArduinoJson
-- ....
-
+- Dallas Temperature
 
 ## Sensori
 - MKR ENV SHIELD
-- Capacitive Soil Moisture Sensor v1.2
-- .....
+- Dallas DS18B20 (Temperatura acqua)
+- Seeed Studio Grove TDS Sensor
+- Seeed Studio Grove Soil Capacitive Sensor
 
 ## Collegamenti
-....
+Per i collegamenti elettrici dei sensori ad Arduino fare riferimento alle guide tecniche online:
+
+[Installazione Arduino MKR e Sensori](https://sites.google.com/fem.digital/guide-kit-edu-green/hortomioplus-arduino)
+
+
+
+
+
