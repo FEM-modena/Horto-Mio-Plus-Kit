@@ -21,3 +21,4 @@
 Per i collegamenti elettrici dei sensori ad Arduino fare riferimento alle guide tecniche online:
 
 [Installazione Arduino MKR e Sensori](https://sites.google.com/fem.digital/guide-kit-edu-green/hortomioplus-arduino)
+
