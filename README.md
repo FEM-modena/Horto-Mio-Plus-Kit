@@ -7,15 +7,18 @@
 ## Librerie
 - MKRENV.h
 - Wire.h
-- WIFININA.h
+- WIFININA
 - ArduinoJson
-- ....
-
+- OneWire
+- DallasTemperature
 
 ## Sensori
 - MKR ENV SHIELD
 - Capacitive Soil Moisture Sensor v1.2
-- .....
+- DS18B20 Temperature sensor
+- TDS Sensor (analog - DF Robot)
 
 ## Collegamenti
-....
+DS18B20 --> Pin 2
+Capacitive Soil Sensor --> A1
+TDS Sensor --> A3

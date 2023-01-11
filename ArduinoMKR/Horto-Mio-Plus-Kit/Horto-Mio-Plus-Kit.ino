@@ -123,7 +123,10 @@ void loop() {
 
   //Lettura sensore capacitivo umidità terreno
   long va = analogRead(PIN_LIVELLO_ACQUA);
-  livello_acqua = (int)map(va, 0, 700, 65, 0); //in millimetri
+  Serial.println(va);
+  //livello_acqua = (int)map(va, 0, 700, 65, 0); //in millimetri, per Diymore
+  livello_acqua = (int)map(va, 550, 750, 30, 0); //in millimetri, per Grove
+  if (livello_acqua < 0) livello_acqua = 0;
 
   //Delay per MUX analogico
   delay(1);
@@ -135,6 +138,7 @@ void loop() {
 
   temp_sens.requestTemperatures();
   temp_acqua = temp_sens.getTempCByIndex(0);
+  if (temp_acqua < 0) temp_acqua = 0; //Sensore non attivo
 
   accendi_LED_per(2); //Lampeggia il led per 2 volte
       

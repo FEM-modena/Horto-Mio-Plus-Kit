@@ -55,8 +55,9 @@ void Trasmetti_Dati_Cloud()
   {
     Serial.println("Connesso al Cloud IoT");
     // Make a HTTP request:
-    client.println("POST /api/v1/" CHIAVE_CLOUD "/telemetry HTTP/1.1"); 
-    client.println("Host: ");  
+    client.println("POST /api/v1/" CHIAVE_CLOUD "/telemetry HTTP/1.1");
+    String host_string = String("Host: ") + String(dboard_server); 
+    client.println(host_string);  
     client.println("Connection: close");  
     client.print("Content-Length: ");  
     client.println(measureJson(doc));  
